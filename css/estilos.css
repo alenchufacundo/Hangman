@@ -1,13 +1,14 @@
-@font-face{
-    font-family: 'Paytone One', sans-serif;
-    src: url("PaytoneOne-Regular.ttf") format("truetype");
-}
+
 body{
     width: auto;
     height: auto;
-    background-image: url("/images/hangman2.png");
+    background: url(../images/hangman2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.imagen-fondo{
+    width: 400px;
 }
 
 .caja-superior{
