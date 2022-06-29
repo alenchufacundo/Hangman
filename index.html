@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Ahorcado</title>
+        <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="shortcut icon" href="#">
+        <script src="https://kit.fontawesome.com/37ee1699ac.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="caja-superior">
+                <div class="area-titulo">
+                    <button id="boton-sonido"><i id="activo" class="fa-solid fa-volume-high"></i>
+                        <i id="no-activo" class="fa-solid fa-volume-xmark"></i></button>                                   
+                    <img src="images/logo.png" id="logo">
+                    <h1 class="titulo-principal"><img class="titulo" src="images/titulo2.png" alt=""></h1>
+                </div>
+         </div>
+        </header>
+        <main>
+            <div class="caja-media">
+                <div id="area-botones-inicio">
+                    <button class="boton-pantalla-inicio" id="btnInicio">Iniciar Juego</button>
+                    <button class="boton-pantalla-inicio" id="btnJuegoPropio">Juego Propio</button>
+                    <button class="boton-pantalla-inicio" id="btnAgregarPalabra">Agregar Palabra</button>
+                    <button class="boton-pantalla-inicio" id="btnLimpiarPalabras">Limpiar Palabras</button>
+                </div>
+
+                <div class="invisible" id="area-de-juego">
+                    <div id="juego" for="input-invisible">
+                        <p id="score"> Score 0 </p>
+                        <img src="images/ahorcado-plataforma.png" id="ahorcado" alt="Plataforma del ahorcado">
+                        <canvas class="canvas" height="200px" width="1200"></canvas>
+                    </div>
+                    <div id="botones-juego">
+                        <button id="rendirse"> Rendirse</button>
+                        <button id="volver-menu"> Volver al menu </button>
+                        <input type="text" name="input-invisible"" id="input-invisible">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Facundo Rios - 2022</p> 
+            <p>© Copyright</p>
+            <p>----</p>
+            <p>
+                <a class="linkedin" href="https://github.com/alenchufacundo"><i class="fa-brands fa-github"></i></a>
+                
+                <a class="github" href="https://www.linkedin.com/in/alenchufacundorios/"><i class="fa-brands fa-linkedin"></i></a>
+            </p>
+        </footer>
+        <audio id="audio" autoplay loop src="audio/horror.ogg"></audio>
+        <script src="js/sonido.js"></script>
+        <script src="js/ahorcado-script.js"></script>
+        <script src="js/pantalla-de-inicio.js"></script>    
+        <script src="js/juego-propio-script.js"></script>
+        <script src="js/agregar-palabra-script.js"></script>
+        <script src="js/limpiar-palabra-script.js"></script>
+        <script src="js/presionar-teclas.js"></script>
+        <script src="js/botones-dentro-del-juego.js"></script>
+        <script src="js/ganaste-perdiste.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+    
+</html>
